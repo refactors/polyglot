@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #fafafa;
+    color: #212121;
+}
+header, main {
+    margin: 0 auto;
+    width: 95%;
+    max-width: 40em;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-size: 4em;
+    margin: 0 0 .67em;
+}
+form div:nth-child(1) {
+    display: flex;
+}
+form div:nth-child(1) div {
+    flex-basis: 50%;
+    display: inline-block;
+}
+form div:nth-child(1) div:nth-child(2) {
+    text-align: right;
+}
+input[type="submit"], select {
+    text-decoration: none;
+    color: #fff !important;
+    background-color: #FFC107;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+    /* border: none; */
+    border-radius: .15em;
+    display: inline-block;
+    height: 2.25em;
+    line-height: 2.25em;
+    outline: 0;
+    padding: 0 1rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+select {
+
+}
+footer {
+        text-align: center;
+    font-size: .7em;
+    font-weight: bold;
+    color: #ddd;
+    margin: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+input[type="text"], div#result {
+    display: block;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    border-radius: .2em;
+    padding: .5em;
+    height: auto;
+    margin: .5em 0;
+    background-color: #fff;
+}
