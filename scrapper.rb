@@ -32,12 +32,21 @@ table.search("tr").map do |row|
 
             text = anchors[0].text
 
-            result = db[:languages].insert_one({
-                officialName: text,
-                commonName: text
-            })
+            # meter check a ver se a lang n ta ja aqui
+            #db[:languages].find(:commonName => text).each do |lang|
 
-            languages << BSON::ObjectId(result.inserted_id)
+            #if results.map.length > 0
+            #    languages << BSON::ObjectId(results[0].id)
+            #else
+                result = db[:languages].insert_one({
+                    officialName: text,
+                    commonName: text
+                })
+
+                languages << BSON::ObjectId(result.inserted_id)
+            #end
+
+
         end
         next
     end
